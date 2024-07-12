@@ -1,0 +1,16 @@
+volumes:
+  data:
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: employee_db
+      MYSQL_USER: employee
+      MYSQL_PASSWORD: employee
+      MYSQL_ROOT_PASSWORD: employee
+    volumes:
+      - data:/var/lib/mysql:delegated
+      - ./mysql-init-files:/docker-entrypoint-initdb.d
+    ports:
+      - 3307:3306
