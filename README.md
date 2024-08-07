@@ -55,7 +55,7 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 spring.jpa.hibernate.ddl-auto=update
 
 # App Properties
-nrapendra.app.jwtSecret= ======================BezKoder=Spring===========================
+nrapendra.app.jwtSecret=580b4613e846959bc75076eea4fdcda2f83b4fe89265d04ae78c86fdf48bc1c6
 nrapendra.app.jwtExpirationMs=86400000
 ```
 ## Run Spring Boot application
@@ -65,9 +65,9 @@ mvn spring-boot:run
 
 ## Run following SQL insert statements
 ```
-INSERT INTO roles(name) VALUES('ROLE_USER');
-INSERT INTO roles(name) VALUES('ROLE_MODERATOR');
-INSERT INTO roles(name) VALUES('ROLE_ADMIN');
+INSERT INTO roles(id,name) VALUES(1,'ROLE_USER');
+INSERT INTO roles(id,name) VALUES(2,'ROLE_MODERATOR');
+INSERT INTO roles(id,name) VALUES(3,'ROLE_ADMIN');
 ```
 
 For more detail, please visit:
