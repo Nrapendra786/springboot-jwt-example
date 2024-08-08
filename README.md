@@ -42,7 +42,7 @@ spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.PostgreSQLDialect
 spring.jpa.hibernate.ddl-auto= update
 
 # App Properties
-nrapendra.app.jwtSecret= bezKoderSecretKey
+nrapendra.app.jwtSecret=580b4613e846959bc75076eea4fdcda2f83b4fe89265d04ae78c86fdf48bc1c6
 nrapendra.app.jwtExpirationMs= 86400000
 ```
 - For MySQL
